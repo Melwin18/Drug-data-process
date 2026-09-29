@@ -1,0 +1,24 @@
+# Render Blueprint for the Early Guard web client.
+#
+# Deploy: push this repo to GitHub, then in Render choose
+#   New +  ->  Blueprint  ->  connect the repo.
+# Render reads this file, installs the slim webapp requirements and starts the
+# stdlib HTTP server. The server binds 0.0.0.0 and honours the PORT Render
+# injects, so no extra configuration is required.
+#
+# Note: scikit-learn 1.9.x (the version that produced best_model_pipeline.pkl)
+# requires Python >= 3.11, hence the pinned PYTHON_VERSION below.
+
+services:
+  - type: web
+    name: early-guard
+    runtime: python
+    plan: free
+    branch: main
+    autoDeploy: true
+    buildCommand: pip install -r webapp/requirements.txt
+    startCommand: python webapp/server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"

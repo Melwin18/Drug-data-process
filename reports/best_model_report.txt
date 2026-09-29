@@ -1,0 +1,14 @@
+=== BEST MODEL REPORT ===
+Selected Model: Logistic Regression
+Reasoning: Selected based on the highest Macro F1 score, ensuring balanced performance across all risk classes.
+Model: Logistic Regression
+Accuracy: 0.705
+Precision: 0.7154663667961563
+Recall: 0.705
+F1-Score: 0.7090610879522412
+Macro Precision: 0.7030296008541767
+Macro Recall: 0.6994444444444444
+Macro F1: 0.7001187106513647
+Balanced Accuracy: 0.6994444444444444
+ROC-AUC: 0.8630644841269842
+Training Time: 5.3683717250823975

@@ -1,0 +1,37 @@
+=== EDA SUMMARY ===
+
+A. Dataset Overview
+- Original Rows: 5000, Columns: 87
+- Final Rows: 5000, Columns: 76
+
+B. Missing-Value Analysis
+- No critical missing values found post-imputation.
+- Initial missing values: 0 columns had missing values.
+
+C. Target Distribution
+           Class  Count  Percentage
+0       Low Risk   2000        40.0
+1      High Risk   1500        30.0
+2  Moderate Risk   1500        30.0
+
+D. Numerical Feature Distributions
+- Most numerical features follow expected scales. Outliers retained to reflect extreme risk cases.
+
+E. Categorical Feature Distributions
+- Categorical values were standardized to Title Case to fix inconsistencies.
+
+F. Feature vs Target Analysis
+- Strongest correlated predictors were evaluated and strictly post-outcome variables were removed to avoid target leakage.
+
+G. Correlation Matrix
+- Generated in reports/correlation_report.csv
+
+H. Outlier Analysis
+- No strict IQR filtering was applied because extreme psychological/behavioural values often represent true high-risk individuals.
+
+I. Class Imbalance Analysis
+- Imbalance check provided in Target Distribution section.
+
+J. Important Observations
+- Data heavily represents lifestyle and psychological markers.
+- Post-usage variables like Duration_of_Use and Craving_Level were identified and removed.

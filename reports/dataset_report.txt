@@ -1,0 +1,12 @@
+=== DATASET VALIDATION REPORT ===
+File Name: data/final/final_ml_dataset.csv
+Original Rows: 5000
+Original Columns: 36
+Removed Leakage Features: []
+Target Column: Drug_Abuse_Risk
+Target Distribution:
+Drug_Abuse_Risk
+Low Risk         2000
+High Risk        1500
+Moderate Risk    1500
+Name: count, dtype: int64

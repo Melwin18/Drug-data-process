@@ -1,0 +1,15 @@
+# Production dependencies for the Early Guard web client (webapp/server.py).
+#
+# This is the slim runtime set — only what the HTTP server and the live
+# inference path actually import. The heavier research/Streamlit stack lives in
+# the repository-root requirements.txt and is NOT needed to serve the web app.
+#
+# scikit-learn is pinned to the exact version that produced
+# models/best_model_pipeline.pkl. Loading a pickle across major/minor versions
+# can raise InconsistentVersionWarning or break predict_proba, so keep this in
+# lockstep with the artefact. scikit-learn 1.9.x requires Python >= 3.11.
+
+scikit-learn==1.9.0
+pandas>=2.0,<3.0
+numpy>=1.24.1
+joblib>=1.4.0

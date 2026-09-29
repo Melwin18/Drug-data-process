@@ -1,0 +1,6 @@
+=== FEATURE SELECTION REPORT ===
+Evaluated on Training Set using Base RandomForest.
+Total Features after Encoding: 40
+Features Retained (Importance >= 0.001): 40
+Features Dropped / Redundant: 0
+Leakage Risk Features (Removed in Step 1): []

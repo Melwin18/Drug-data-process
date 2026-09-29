@@ -1,0 +1,70 @@
+=== ENSEMBLE MODEL REPORT ===
+
+1. Methodology
+   - Used data/final/final_ml_dataset.csv without modifying it.
+   - Used the existing 35 finalized features from model metadata.
+   - Used data/final/test_indices.csv as the immutable 1,000-row test set.
+   - Existing baseline result files were preserved.
+
+2. Base models
+   - Logistic Regression, Decision Tree, Random Forest, SVM, XGBoost, LightGBM.
+   - Existing tuned hyperparameters from results/hyperparameter_tuning_results.csv were reused.
+
+3. Ensemble methods
+   - Soft Voting: unweighted mean of base-model class probabilities.
+   - Weighted Soft Voting: weights derived from 5-fold training-only Macro F1.
+   - Stacking: base-model out-of-fold probabilities plus a Logistic Regression meta-learner.
+
+4. Cross-validation and leakage prevention
+   - Stratified 5-fold CV with random state 42 generated OOF predictions.
+   - Every fold fitted its own imputer, scaler, and encoder inside a Pipeline.
+   - The locked test set was used only once for final evaluation.
+   - No test rows were used for weights, OOF predictions, meta-learning, or selection.
+
+5. Training-only ensemble weights
+   - Logistic Regression: 0.172901 (CV Macro F1=0.659279)
+   - Decision Tree: 0.145620 (CV Macro F1=0.555255)
+   - Random Forest: 0.168876 (CV Macro F1=0.643934)
+   - SVM: 0.172419 (CV Macro F1=0.657441)
+   - XGBoost: 0.169405 (CV Macro F1=0.645949)
+   - LightGBM: 0.170780 (CV Macro F1=0.651192)
+
+6. Meta-learner
+   - Logistic Regression with class_weight='balanced', trained only on concatenated OOF probabilities.
+
+7. Locked test-set metrics
+          model_name model_type  accuracy  macro_precision  macro_recall  macro_f1  balanced_accuracy  roc_auc
+ Logistic Regression individual     0.705         0.703030      0.699444  0.700119           0.699444 0.863064
+       Decision Tree individual     0.579         0.583073      0.573889  0.576187           0.573889 0.703679
+       Random Forest individual     0.682         0.670954      0.672500  0.671681           0.672500 0.847073
+                 SVM individual     0.699         0.687343      0.687778  0.687461           0.687778 0.861892
+             XGBoost individual     0.677         0.657787      0.661389  0.658391           0.661389 0.853482
+            LightGBM individual     0.676         0.658166      0.661944  0.659346           0.661944 0.841545
+         Soft Voting   ensemble     0.685         0.673377      0.674722  0.674008           0.674722 0.851141
+Weighted Soft Voting   ensemble     0.687         0.676927      0.677500  0.677192           0.677500 0.853053
+            Stacking   ensemble     0.693         0.690545      0.686944  0.687743           0.686944 0.861799
+
+8. Objective final selection
+   Priority: Macro F1, Macro Recall, Balanced Accuracy, ROC-AUC.
+   Final selected model: Logistic Regression
+   Ensemble improves over Logistic Regression by priority metrics: NO
+
+9. Comparison with Logistic Regression
+   Baseline Macro F1: 0.700119
+   Best ensemble Macro F1: 0.687743
+   Baseline Macro Recall: 0.699444
+   Best ensemble Macro Recall: 0.686944
+   Baseline Balanced Accuracy: 0.699444
+   Best ensemble Balanced Accuracy: 0.686944
+   Baseline ROC-AUC: 0.863064
+   Best ensemble ROC-AUC: 0.861799
+
+10. Explainability
+   - Permutation importance was generated using a train-derived validation split.
+   - Importance indicates model feature contribution, not causal risk factors.
+   - SHAP was not forced for the complete heterogeneous ensemble; permutation importance is used instead.
+
+11. Limitations
+   - Drug_Abuse_Risk is an operational research label, not a clinical diagnosis.
+   - Cross-sectional, self-reported data may contain response bias.
+   - Ensemble performance is specific to this locked test set and dataset.

@@ -1,0 +1,88 @@
+Column,DataType,MissingValues,MissingPercentage,UniqueValues,NumericalRange
+Record_ID,int64,0,0.0,5000,0 - 4999
+Age,int64,0,0.0,47,15 - 65
+Gender,object,0,0.0,4,N/A
+Education_Level,object,0,0.0,6,N/A
+Occupation_Status,object,0,0.0,4,N/A
+Socioeconomic_Status,object,0,0.0,5,N/A
+Region_Type,object,0,0.0,3,N/A
+Marital_Status,object,0,0.0,4,N/A
+Living_Arrangement,object,0,0.0,5,N/A
+Household_Size,int64,0,0.0,8,1 - 8
+Financial_Stress,int64,0,0.0,11,0 - 10
+Stress_Level,int64,0,0.0,11,0 - 10
+Anxiety_Level,int64,0,0.0,11,0 - 10
+Depression_Score,int64,0,0.0,28,0 - 27
+Psychological_Distress,int64,0,0.0,11,0 - 10
+Impulsivity,int64,0,0.0,11,0 - 10
+Sensation_Seeking,int64,0,0.0,11,0 - 10
+Emotional_Regulation,int64,0,0.0,11,0 - 10
+Self_Esteem,int64,0,0.0,11,0 - 10
+Loneliness_Level,int64,0,0.0,11,0 - 10
+Anger_Level,int64,0,0.0,11,0 - 10
+Hopelessness_Level,int64,0,0.0,11,0 - 10
+Trauma_Symptoms,int64,0,0.0,11,0 - 10
+Coping_Ability,int64,0,0.0,9,2 - 10
+Mental_Health_History,object,0,0.0,2,N/A
+Alcohol_Consumption,object,0,0.0,5,N/A
+Smoking_Status,object,0,0.0,3,N/A
+Previous_Substance_Exposure,object,0,0.0,2,N/A
+Age_First_Substance_Exposure,float64,3156,63.12,10,10.0 - 19.0
+Substance_Exposure_Frequency,object,0,0.0,6,N/A
+Polysubstance_Exposure,object,0,0.0,2,N/A
+Substance_Availability_Exposure,int64,0,0.0,11,0 - 10
+Substance_Use_Curiosity,int64,0,0.0,10,1 - 10
+Substance_Use_Intention,int64,0,0.0,11,0 - 10
+Peer_Influence,int64,0,0.0,11,0 - 10
+Peer_Substance_Exposure,int64,0,0.0,11,0 - 10
+Social_Support,int64,0,0.0,11,0 - 10
+Social_Isolation,int64,0,0.0,11,0 - 10
+Bullying_Violence_Exposure,int64,0,0.0,11,0 - 10
+Social_Integration,int64,0,0.0,9,2 - 10
+Friendship_Quality,int64,0,0.0,11,0 - 10
+Community_Support,int64,0,0.0,10,1 - 10
+Social_Pressure,int64,0,0.0,11,0 - 10
+Family_History_Substance_Use,object,0,0.0,2,N/A
+Family_Support,int64,0,0.0,11,0 - 10
+Parental_Monitoring,int64,0,0.0,11,0 - 10
+Family_Conflict,int64,0,0.0,11,0 - 10
+Childhood_Adversity,int64,0,0.0,11,0 - 10
+Parental_Substance_Use,object,0,0.0,2,N/A
+Family_Stability,int64,0,0.0,11,0 - 10
+Family_Communication_Quality,int64,0,0.0,10,1 - 10
+Sleep_Duration,float64,0,0.0,59,3.5 - 9.4
+Sleep_Quality,int64,0,0.0,11,0 - 10
+Physical_Activity,int64,0,0.0,11,0 - 10
+Screen_Time,float64,0,0.0,119,0.5 - 12.6
+Academic_Work_Stress,int64,0,0.0,11,0 - 10
+Diet_Quality,int64,0,0.0,11,0 - 10
+Daily_Routine_Stability,int64,0,0.0,11,0 - 10
+Exercise_Frequency,int64,0,0.0,8,0 - 7
+Leisure_Activity_Level,int64,0,0.0,11,0 - 10
+Healthcare_Access,int64,0,0.0,11,0 - 10
+Academic_Performance,int64,0,0.0,11,0 - 10
+Academic_Pressure,int64,0,0.0,9,2 - 10
+Workload_Level,int64,0,0.0,9,2 - 10
+Job_Satisfaction,int64,0,0.0,11,0 - 10
+Workplace_Stress,int64,0,0.0,11,0 - 10
+School_Work_Absenteeism,int64,0,0.0,10,0 - 9
+Risk_Taking_Tendency,int64,0,0.0,10,1 - 10
+Rule_Breaking_Behaviour,int64,0,0.0,11,0 - 10
+Aggression_Level,int64,0,0.0,11,0 - 10
+Decision_Making_Control,int64,0,0.0,10,1 - 10
+Self_Control,int64,0,0.0,11,0 - 10
+Behavioural_Problems,int64,0,0.0,11,0 - 10
+Reward_Sensitivity,int64,0,0.0,9,2 - 10
+Social_Media_Usage,float64,0,0.0,113,0.0 - 12.4
+Digital_Social_Pressure,int64,0,0.0,11,0 - 10
+Online_Risk_Exposure,int64,0,0.0,11,0 - 10
+Night_Time_Device_Usage,float64,0,0.0,69,0.0 - 7.5
+Type_of_Substance_Used,object,0,0.0,7,N/A
+Frequency_of_Use,object,0,0.0,6,N/A
+Duration_of_Use,float64,0,0.0,75,0.0 - 7.7
+Craving_Level,int64,0,0.0,11,0 - 10
+Withdrawal_Symptoms,object,0,0.0,4,N/A
+Previous_Rehabilitation_Counselling,object,0,0.0,2,N/A
+Attitude_Toward_Substance_Use,object,0,0.0,5,N/A
+Awareness_of_Drug_Related_Risks,int64,0,0.0,10,1 - 10
+Drug_Abuse_Risk,object,0,0.0,3,N/A

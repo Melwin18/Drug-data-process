@@ -1,0 +1,87 @@
+Feature,Category,Data_Type,Missing_Pct_Train,Effect_Size,P_Value,Significant_Train,RF_Importance,Perm_Importance,XGB_Importance,Combined_Score,Redundancy_Flag,Leakage_Status,Analysis_Data,Selection_Decision,Reason
+Mental_Health_History,Psychological,object,0.0,0.24757,0.0,Yes,0.00503,0.00267,0.01002,0.55191,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Workplace_Stress,Academic/Work,int64,0.0,0.06004,0.0,Yes,0.0106,0.004,0.00965,0.53825,No,Safe,Training-set only (v2.0),NOT_SELECTED,Score 0.5383 - not in final selection after leakage-corrected analysis
+Social_Media_Usage,Digital,float64,0.0,0.03109,0.0,Yes,0.0192,0.00183,0.01056,0.53279,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Trauma_Symptoms,Psychological,int64,0.0,0.05501,0.0,Yes,0.01069,0.00125,0.01188,0.52459,No,Safe,Training-set only (v2.0),NOT_SELECTED,Score 0.5246 - not in final selection after leakage-corrected analysis
+Substance_Availability_Exposure,Substance-Related,int64,0.0,0.03079,0.0,Yes,0.01256,0.00233,0.0112,0.52186,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Anger_Level,Psychological,int64,0.0,0.0832,0.0,Yes,0.01146,-0.00142,0.00925,0.51093,No,Safe,Training-set only (v2.0),NOT_SELECTED,Score 0.5109 - not in final selection after leakage-corrected analysis
+Parental_Monitoring,Family,int64,0.0,0.02721,0.0,Yes,0.01255,-0.00017,0.01247,0.50273,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Coping_Ability,Psychological,int64,0.0,0.0915,0.0,Yes,0.00953,-0.00283,0.00951,0.4918,No,Safe,Training-set only (v2.0),NOT_SELECTED,Score 0.4918 - not in final selection after leakage-corrected analysis
+Sensation_Seeking,Psychological,int64,0.0,0.01953,0.0,Yes,0.01245,0.00217,0.01282,0.47814,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Rule_Breaking_Behaviour,Behavioural,int64,0.0,0.02299,0.0,Yes,0.0105,0.00542,0.01001,0.47268,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Community_Support,Social/Peer,int64,0.0,0.01896,0.0,Yes,0.00924,0.00633,0.01023,0.46175,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Leisure_Activity_Level,Lifestyle,int64,0.0,0.03326,0.0,Yes,0.00982,0.00342,0.00966,0.43716,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Smoking_Status,Substance-Related,object,0.0,0.12859,0.0,Yes,0.00462,-0.003,0.01281,0.42896,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Friendship_Quality,Social/Peer,int64,0.0,0.02657,0.0,Yes,0.00893,0.00558,0.0098,0.42896,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Daily_Routine_Stability,Lifestyle,int64,0.0,0.05424,0.0,Yes,0.00964,-0.00042,0.00915,0.38798,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Diet_Quality,Lifestyle,int64,0.0,0.00892,1e-08,Yes,0.00986,0.00867,0.00975,0.38525,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Aggression_Level,Behavioural,int64,0.0,0.03497,0.0,Yes,0.00911,0.00083,0.00996,0.37432,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Socioeconomic_Status,Demographic,object,0.0,0.06456,5.346e-05,Yes,0.00671,0.00275,0.00908,0.35792,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Substance_Use_Curiosity,Substance-Related,int64,0.0,0.02676,0.0,Yes,0.00965,0.001,0.01029,0.35246,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Social_Integration,Social/Peer,int64,0.0,0.03694,0.0,Yes,0.00902,0.0015,0.00959,0.35246,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Age,Demographic,int64,0.0,0.00097,0.05334322,No,0.01383,0.00358,0.00882,0.34973,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Bullying_Violence_Exposure,Social/Peer,int64,0.0,0.03627,0.0,Yes,0.0103,-0.00017,0.00876,0.32787,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Online_Risk_Exposure,Digital,int64,0.0,0.01306,0.0,Yes,0.00933,0.00067,0.0105,0.31421,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Education_Level,Demographic,object,0.0,0.04602,0.07572343,No,0.00693,0.00308,0.00837,0.31148,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Physical_Activity,Lifestyle,int64,0.0,0.01513,0.0,Yes,0.0108,-0.00058,0.01017,0.30874,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Alcohol_Consumption,Substance-Related,object,0.0,0.06356,8.166e-05,Yes,0.0059,0.0005,0.00963,0.29781,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Living_Arrangement,Demographic,object,0.0,0.03266,0.38303114,No,0.0063,0.0055,0.00841,0.29508,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Family_Communication_Quality,Family,int64,0.0,0.01832,0.0,Yes,0.009,0.00133,0.0094,0.29235,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Academic_Pressure,Academic/Work,int64,0.0,0.04065,0.0,Yes,0.00831,0.00025,0.00887,0.28689,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Household_Size,Demographic,int64,0.0,3e-05,0.34516485,No,0.00766,0.005,0.00915,0.27596,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Risk_Taking_Tendency,Behavioural,int64,0.0,0.01868,0.0,Yes,0.00883,0.00275,0.0086,0.27049,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Healthcare_Access,Lifestyle,int64,0.0,0.0,0.79470713,No,0.00809,0.004,0.00911,0.25956,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Digital_Social_Pressure,Digital,int64,0.0,0.02586,0.0,Yes,0.00936,-0.00158,0.00932,0.25683,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Marital_Status,Demographic,object,0.0,0.03069,0.27429794,No,0.00393,0.00325,0.00809,0.25137,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Reward_Sensitivity,Behavioural,int64,0.0,0.00534,8.6e-06,Yes,0.00821,0.00225,0.00942,0.23497,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Occupation_Status,Demographic,object,0.0,0.03173,0.23424534,No,0.00446,0.00217,0.00868,0.22678,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Exercise_Frequency,Lifestyle,int64,0.0,0.00502,1.609e-05,Yes,0.00902,0.00117,0.00896,0.21311,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Parental_Substance_Use,Family,object,0.0,0.04558,0.01568736,Yes,0.00173,-0.00025,0.00943,0.20492,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Family_History_Substance_Use,Family,object,0.0,0.01303,0.71194536,No,0.00169,0.00208,0.00807,0.15574,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Gender,Demographic,object,0.0,0.01212,0.97809427,No,0.00307,0.00167,0.00735,0.11749,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Region_Type,Demographic,object,0.0,0.02367,0.34464928,No,0.00451,-0.0005,0.00751,0.10929,No,Safe,Training-set only (v2.0),NOT_SELECTED,Below importance threshold (training analysis)
+Record_ID,Leakage/Identifier,int64,,,,N/A,,,,,N/A,IDENTIFIER,Pre-Split (structural),REMOVED,Identifier - no predictive value
+Type_of_Substance_Used,Leakage/Identifier,object,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,Post-outcome: direct record of substance abuse
+Frequency_of_Use,Leakage/Identifier,object,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,Post-outcome: current use frequency
+Duration_of_Use,Leakage/Identifier,float64,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,Post-outcome: duration of current episode
+Craving_Level,Leakage/Identifier,int64,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,Post-outcome: DSM-5 dependence criterion
+Withdrawal_Symptoms,Leakage/Identifier,object,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,Post-outcome: DSM-5 dependence criterion
+Previous_Rehabilitation_Counselling,Leakage/Identifier,object,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,Post-outcome/reverse-causation: prior abuse confirmed
+Substance_Exposure_Frequency,Leakage/Identifier,object,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,Active-use proxy: overlaps with Frequency_of_Use
+Polysubstance_Exposure,Leakage/Identifier,object,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,Post-outcome: concurrent multi-substance use implies active abuse
+Age_First_Substance_Exposure,Leakage/Identifier,float64,,,,N/A,,,,,N/A,LEAKAGE,Pre-Split (structural),REMOVED,63.1% missing; missingness pattern reveals class membership
+Previous_Substance_Exposure,Substance-Related,object,0.0,0.29817,0.0,Yes,0.02472,0.01308,0.04111,1.0,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Hopelessness_Level,Psychological,int64,0.0,0.15466,0.0,Yes,0.01951,0.00933,0.01355,0.93716,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Depression_Score,Psychological,int64,0.0,0.15923,0.0,Yes,0.03609,0.00217,0.01831,0.87705,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Stress_Level,Psychological,int64,0.0,0.2533,0.0,Yes,0.04571,0.00075,0.04567,0.87432,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Loneliness_Level,Psychological,int64,0.0,0.09663,0.0,Yes,0.01465,0.01025,0.01286,0.86885,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Social_Isolation,Social/Peer,int64,0.0,0.08424,0.0,Yes,0.01712,0.01008,0.01744,0.85519,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Impulsivity,Psychological,int64,0.0,0.07319,0.0,Yes,0.01854,0.00975,0.01845,0.85246,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Psychological_Distress,Psychological,int64,0.0,0.28568,0.0,Yes,0.06143,-0.00408,0.07742,0.8306,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Sleep_Quality,Lifestyle,int64,0.0,0.08587,0.0,Yes,0.01338,0.00658,0.01183,0.81967,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Self_Esteem,Psychological,int64,0.0,0.13887,0.0,Yes,0.01782,0.00492,0.01029,0.81421,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Night_Time_Device_Usage,Digital,float64,0.0,0.1084,0.0,Yes,0.02261,0.00292,0.01092,0.81421,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Screen_Time,Lifestyle,float64,0.0,0.08868,0.0,Yes,0.02144,0.00433,0.01069,0.81148,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Anxiety_Level,Psychological,int64,0.0,0.2325,0.0,Yes,0.04128,-0.00692,0.03745,0.80328,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Childhood_Adversity,Family,int64,0.0,0.07952,0.0,Yes,0.01585,0.00308,0.01412,0.79508,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Peer_Substance_Exposure,Social/Peer,int64,0.0,0.06161,0.0,Yes,0.01997,0.00308,0.01929,0.78415,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Sleep_Duration,Lifestyle,float64,0.0,0.10487,0.0,Yes,0.02281,0.00083,0.01171,0.75683,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Family_Conflict,Family,int64,0.0,0.08454,0.0,Yes,0.01882,-0.00067,0.01799,0.74044,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Social_Support,Social/Peer,int64,0.0,0.06966,0.0,Yes,0.01258,0.00408,0.0135,0.7377,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Academic_Work_Stress,Lifestyle,int64,0.0,0.07413,0.0,Yes,0.01138,0.00475,0.01095,0.68852,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Attitude_Toward_Substance_Use,Attitudinal,object,0.0,0.16146,0.0,Yes,0.00906,0.006,0.01185,0.68852,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Social_Pressure,Social/Peer,int64,0.0,0.0516,0.0,Yes,0.01378,0.00483,0.01396,0.68579,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Substance_Use_Intention,Substance-Related,int64,0.0,0.06405,0.0,Yes,0.01474,0.0015,0.0136,0.65847,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Workload_Level,Academic/Work,int64,0.0,0.06578,0.0,Yes,0.01103,0.00533,0.01024,0.65847,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Academic_Performance,Academic/Work,int64,0.0,0.07677,0.0,Yes,0.01018,0.0035,0.00971,0.64208,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Behavioural_Problems,Behavioural,int64,0.0,0.0608,0.0,Yes,0.01264,0.00258,0.01112,0.62568,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Emotional_Regulation,Psychological,int64,0.0,0.05912,0.0,Yes,0.01183,0.00158,0.0123,0.62295,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Family_Stability,Family,int64,0.0,0.05572,0.0,Yes,0.01171,0.00292,0.01173,0.62295,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Family_Support,Family,int64,0.0,0.04342,0.0,Yes,0.01241,0.00192,0.01385,0.60383,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Self_Control,Behavioural,int64,0.0,0.06767,0.0,Yes,0.01148,-0.00033,0.01254,0.60109,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Job_Satisfaction,Academic/Work,int64,0.0,0.06709,0.0,Yes,0.01132,-0.00033,0.01149,0.59563,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Peer_Influence,Social/Peer,int64,0.0,0.0551,0.0,Yes,0.01877,-0.00258,0.01946,0.58743,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Decision_Making_Control,Behavioural,int64,0.0,0.05984,0.0,Yes,0.01087,0.00258,0.00989,0.5765,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Awareness_of_Drug_Related_Risks,Attitudinal,int64,0.0,0.03668,0.0,Yes,0.0103,0.00483,0.01103,0.57104,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+School_Work_Absenteeism,Academic/Work,int64,0.0,0.07825,0.0,Yes,0.01089,0.00167,0.00975,0.56421,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"
+Financial_Stress,Demographic,int64,0.0,0.06554,0.0,Yes,0.01088,0.00167,0.00964,0.55328,No,Safe,Training-set only (v2.0),SELECTED,"Retained: strong, non-redundant, non-leakage predictor"

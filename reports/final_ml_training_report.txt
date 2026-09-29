@@ -1,0 +1,63 @@
+FINAL MACHINE LEARNING TRAINING REPORT
+========================================
+Project: AI-Based Early Drug Abuse Risk Assessment and Early Warning System
+
+1. Dataset Characteristics
+   Total observations: 5000
+   Training observations: 4000
+   Testing observations: 1000
+   Classes: High Risk, Low Risk, Moderate Risk
+
+2. Final 35 Features
+   Financial_Stress, Hopelessness_Level, Previous_Substance_Exposure, Social_Isolation, Childhood_Adversity, Sleep_Quality, Workload_Level, Behavioural_Problems, Night_Time_Device_Usage, Attitude_Toward_Substance_Use, Depression_Score, Stress_Level, Loneliness_Level, Impulsivity, Psychological_Distress, Self_Esteem, Screen_Time, Anxiety_Level, Peer_Substance_Exposure, Sleep_Duration, Family_Conflict, Social_Support, Academic_Work_Stress, Social_Pressure, Substance_Use_Intention, Academic_Performance, Family_Stability, Emotional_Regulation, Family_Support, Self_Control, Job_Satisfaction, Peer_Influence, Decision_Making_Control, Awareness_of_Drug_Related_Risks, School_Work_Absenteeism
+
+3. Train/Test Methodology
+   Used predefined locked test_indices.csv to strictly isolate the 1000 test rows.
+
+4. Preprocessing
+   Fitted exclusively on the 4000 training rows.
+   Numerical: Median Imputation + StandardScaler
+   Categorical: Most Frequent Imputation + OneHotEncoder
+
+5. Cross-validation Strategy
+   StratifiedKFold (n_splits=5) for baseline and hyperparameter tuning to ensure robust validation on training data.
+
+6. Six Models Trained
+   Logistic Regression, Decision Tree, Random Forest, SVM, XGBoost, LightGBM
+
+7. Hyperparameter Tuning
+   RandomizedSearchCV optimizing Macro F1-score on the training set.
+
+8. Best Parameters
+   Refer to reports/best_hyperparameters.txt
+
+9. Test Performance (Untouched 1000-row test set)
+                 Model  Accuracy  Macro Precision  Macro Recall  Macro F1  Balanced Accuracy   ROC-AUC  Training Time  Prediction Time
+0  Logistic Regression     0.705         0.703030      0.699444  0.700119           0.699444  0.863064       0.052548         0.008015
+3                  SVM     0.699         0.687343      0.687778  0.687461           0.687778  0.861892       3.350690         0.101411
+2        Random Forest     0.682         0.670954      0.672500  0.671681           0.672500  0.847073       0.954807         0.053085
+5             LightGBM     0.676         0.658166      0.661944  0.659346           0.661944  0.841545       0.141051         0.015000
+4              XGBoost     0.677         0.657787      0.661389  0.658391           0.661389  0.853482       0.209641         0.013002
+1        Decision Tree     0.579         0.583073      0.573889  0.576187           0.573889  0.703679       0.053066         0.008003
+
+10. Best Model
+    Logistic Regression
+    Reason: Selected objectively based on highest Macro F1-Score on the test set.
+
+11. Error Analysis
+    Most common misclassification: Low Risk -> Moderate Risk
+
+12. SHAP Results
+    Top 10 Risk Factors (from model):
+    Previous_Substance_Exposure, Peer_Substance_Exposure, Depression_Score, Stress_Level, Impulsivity, Psychological_Distress, Anxiety_Level, Peer_Influence, Family_Conflict, Social_Isolation
+
+13. Limitations & Research Integrity
+    - Drug_Abuse_Risk is an operational research label.
+    - The model is not a medical diagnostic system.
+    - The model does not prove future drug use.
+    - Cross-sectional associations do not establish causality.
+    - SHAP explains model behaviour, not biological causation.
+    - External validation is required before real-world clinical use.
+
+14. Deployment Recommendation
+    The Logistic Regression model is finalized and saved as best_model_pipeline.pkl and is ready for integration into the Streamlit deployment.

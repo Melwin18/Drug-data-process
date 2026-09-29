@@ -1,0 +1,217 @@
+{
+  "Financial_Stress": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Hopelessness_Level": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 4.0
+  },
+  "Previous_Substance_Exposure": {
+    "type": "categorical",
+    "values": [
+      "Yes",
+      "No"
+    ]
+  },
+  "Social_Isolation": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 4.0
+  },
+  "Childhood_Adversity": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Sleep_Quality": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 5.0
+  },
+  "Workload_Level": {
+    "type": "numeric",
+    "min": 2.0,
+    "max": 10.0,
+    "median": 8.0
+  },
+  "Behavioural_Problems": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 7.0
+  },
+  "Night_Time_Device_Usage": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 7.5,
+    "median": 3.9
+  },
+  "Attitude_Toward_Substance_Use": {
+    "type": "categorical",
+    "values": [
+      "Accepting",
+      "Neutral",
+      "Disapproving",
+      "Strongly disapproving",
+      "Approving"
+    ]
+  },
+  "Depression_Score": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 27.0,
+    "median": 8.0
+  },
+  "Stress_Level": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Loneliness_Level": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Impulsivity": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 5.0
+  },
+  "Psychological_Distress": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 4.0
+  },
+  "Self_Esteem": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Screen_Time": {
+    "type": "numeric",
+    "min": 0.5,
+    "max": 12.6,
+    "median": 6.3
+  },
+  "Anxiety_Level": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 5.0
+  },
+  "Peer_Substance_Exposure": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 4.0
+  },
+  "Sleep_Duration": {
+    "type": "numeric",
+    "min": 3.5,
+    "max": 9.4,
+    "median": 5.9
+  },
+  "Family_Conflict": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 4.0
+  },
+  "Social_Support": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 7.0
+  },
+  "Academic_Work_Stress": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 7.0
+  },
+  "Social_Pressure": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Substance_Use_Intention": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 5.0
+  },
+  "Academic_Performance": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 4.0
+  },
+  "Family_Stability": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Emotional_Regulation": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 5.0
+  },
+  "Family_Support": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Self_Control": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 6.0
+  },
+  "Job_Satisfaction": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 5.0
+  },
+  "Peer_Influence": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 10.0,
+    "median": 5.0
+  },
+  "Decision_Making_Control": {
+    "type": "numeric",
+    "min": 1.0,
+    "max": 10.0,
+    "median": 7.0
+  },
+  "Awareness_of_Drug_Related_Risks": {
+    "type": "numeric",
+    "min": 1.0,
+    "max": 10.0,
+    "median": 8.0
+  },
+  "School_Work_Absenteeism": {
+    "type": "numeric",
+    "min": 0.0,
+    "max": 9.0,
+    "median": 4.0
+  }
+}

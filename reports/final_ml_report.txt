@@ -1,0 +1,25 @@
+=== FINAL RESEARCH REPORT ===
+
+1. Dataset characteristics: Processed dataset capturing demographic, psychological, social, and lifestyle markers.
+2. Preprocessing performed: Imputation (Median/Mode), StandardScaler, OneHotEncoding.
+3. Features removed: []
+4. Features retained: 40 after encoding.
+5. Target definition: 'Drug_Abuse_Risk' -> Classes: Low Risk, Moderate Risk, High Risk.
+6. Train/test split: 80% / 20%, Stratified, Random State 42.
+7. Models trained: Logistic Regression, Decision Tree, Random Forest, SVM, XGBoost, LightGBM.
+8. Hyperparameters used: Tuned via RandomizedSearchCV (CV=3).
+9. Best Model: Logistic Regression
+10. Test-set performance: Accuracy: 0.7050, Macro F1: 0.7001
+11. Error Analysis:
+    - High Risk predicted as Low Risk: 6 cases
+    - High Risk predicted as Moderate Risk: 68 cases
+    - Low Risk predicted as High Risk: 8 cases
+    - Low Risk predicted as Moderate Risk: 90 cases
+    - Moderate Risk predicted as High Risk: 66 cases
+    - Moderate Risk predicted as Low Risk: 57 cases
+
+12. Research Limitations & Caveats:
+   - The model output is an estimated drug-abuse risk based on patterns learned from training data.
+   - Feature importance metrics do NOT indicate causation.
+   - This model CANNOT diagnose addiction and CANNOT definitely predict future drug use.
+   - Data relationships are strictly observational.

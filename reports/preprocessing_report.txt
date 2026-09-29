@@ -1,0 +1,6 @@
+=== PREPROCESSING REPORT ===
+Split Data before Preprocessing to avoid data leakage.
+Train set: 4000 rows
+Test set: 1000 rows
+Numerical features imputed with Median and Scaled (StandardScaler).
+Categorical features imputed with Mode and OneHotEncoded.

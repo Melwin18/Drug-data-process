@@ -1,0 +1,52 @@
+Feature,Category,Decision,Reason,Stage
+Record_ID,Leakage/Identifier,REMOVED,Identifier - no predictive value,Pre-Split
+Type_of_Substance_Used,Leakage/Identifier,REMOVED,Post-outcome: direct record of substance abuse,Pre-Split
+Frequency_of_Use,Leakage/Identifier,REMOVED,Post-outcome: current use frequency,Pre-Split
+Duration_of_Use,Leakage/Identifier,REMOVED,Post-outcome: duration of current episode,Pre-Split
+Craving_Level,Leakage/Identifier,REMOVED,Post-outcome: DSM-5 dependence criterion,Pre-Split
+Withdrawal_Symptoms,Leakage/Identifier,REMOVED,Post-outcome: DSM-5 dependence criterion,Pre-Split
+Previous_Rehabilitation_Counselling,Leakage/Identifier,REMOVED,Post-outcome/reverse-causation: prior abuse confirmed,Pre-Split
+Substance_Exposure_Frequency,Leakage/Identifier,REMOVED,Active-use proxy: overlaps with Frequency_of_Use,Pre-Split
+Polysubstance_Exposure,Leakage/Identifier,REMOVED,Post-outcome: concurrent multi-substance use implies active abuse,Pre-Split
+Age_First_Substance_Exposure,Leakage/Identifier,REMOVED,63.1% missing; missingness pattern reveals class membership,Pre-Split
+Workplace_Stress,Academic/Work,NOT_SELECTED_v2,Score 0.5383 - not in final selection after leakage-corrected analysis,Post-Training-Analysis
+Trauma_Symptoms,Psychological,NOT_SELECTED_v2,Score 0.5246 - not in final selection after leakage-corrected analysis,Post-Training-Analysis
+Coping_Ability,Psychological,NOT_SELECTED_v2,Score 0.4918 - not in final selection after leakage-corrected analysis,Post-Training-Analysis
+Anger_Level,Psychological,NOT_SELECTED_v2,Score 0.5109 - not in final selection after leakage-corrected analysis,Post-Training-Analysis
+Age,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Gender,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Education_Level,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Occupation_Status,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Socioeconomic_Status,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Region_Type,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Marital_Status,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Living_Arrangement,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Household_Size,Demographic,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Sensation_Seeking,Psychological,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Mental_Health_History,Psychological,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Alcohol_Consumption,Substance-Related,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Smoking_Status,Substance-Related,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Substance_Availability_Exposure,Substance-Related,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Substance_Use_Curiosity,Substance-Related,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Bullying_Violence_Exposure,Social/Peer,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Social_Integration,Social/Peer,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Friendship_Quality,Social/Peer,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Community_Support,Social/Peer,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Family_History_Substance_Use,Family,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Parental_Monitoring,Family,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Parental_Substance_Use,Family,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Family_Communication_Quality,Family,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Physical_Activity,Lifestyle,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Diet_Quality,Lifestyle,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Daily_Routine_Stability,Lifestyle,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Exercise_Frequency,Lifestyle,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Leisure_Activity_Level,Lifestyle,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Healthcare_Access,Lifestyle,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Academic_Pressure,Academic/Work,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Risk_Taking_Tendency,Behavioural,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Rule_Breaking_Behaviour,Behavioural,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Aggression_Level,Behavioural,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Reward_Sensitivity,Behavioural,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Social_Media_Usage,Digital,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Digital_Social_Pressure,Digital,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis
+Online_Risk_Exposure,Digital,NOT_SELECTED,Below importance threshold (training analysis),Post-Training-Analysis

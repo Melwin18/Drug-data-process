@@ -1,0 +1,52 @@
+======================================================================
+FEATURE SELECTION AUDIT - PIPELINE v1.0 vs v2.0
+======================================================================
+
+PIPELINE v1.0 LEAKAGE ANALYSIS:
+
+STEP 5 (Imputation) - LEAKAGE:
+  Median/mode imputation fit on full 5000 rows before split.
+  Test-set statistics leaked into imputation parameters.
+  FIX: Split first, fit imputer on training set only.
+
+STEP 6 (Encoding) - LEAKAGE:
+  LabelEncoder fit on full 5000 rows.
+  Test-set label distributions leaked into encoding.
+  FIX: Split first, fit encoder on training set only.
+
+STEP 7 (Correlation) - LEAKAGE:
+  Correlation matrix computed on full 5000 rows.
+  Test-set feature relationships influenced correlation analysis.
+  FIX: Compute correlation on training set only.
+
+STEP 7 (Feature-Target Correlation) - LEAKAGE:
+  Target correlation computed with all 5000 target labels.
+  FIX: Use training labels only.
+
+STEP 8 (Statistical Tests) - LEAKAGE:
+  Kruskal-Wallis and Chi-Squared tests run on full 5000 rows.
+  Effect sizes and p-values influenced by test observations.
+  FIX: Run statistical tests on training data only.
+
+STEP 9 (Model-Based Importance) - PARTIAL LEAKAGE:
+  'X_all = df_encoded' was full-dataset encoded data (contaminated).
+  Split was local within STEP 9 but upstream contamination persisted.
+  Permutation importance used 20% holdout of contaminated data.
+  FIX: Encode/impute training data first, then split internally.
+
+SEVERITY: MODERATE
+  The final 35-feature list is expected to be similar after correction
+  because the dataset has no time-ordering issues and distributions are
+  consistent. However, scientific integrity requires correction.
+
+CORRECTED PIPELINE v2.0 ORDER:
+  1. Load raw data
+  2. Remove structural leakage (non-data-driven, pre-split)
+  3. TRAIN/TEST SPLIT (stratified 80/20)
+  4. Fit preprocessing on training set only
+  5. Statistical tests on training set only
+  6. Correlation on training set only
+  7. RF/XGB importance on training set (internal 80/20 split)
+  8. Permutation importance on internal validation (from training only)
+  9. Feature selection decision
+  10. Save final dataset

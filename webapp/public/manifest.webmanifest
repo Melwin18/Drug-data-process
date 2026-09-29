@@ -1,0 +1,18 @@
+{
+  "name": "Early Guard — Understand Risk. Act Early.",
+  "short_name": "Early Guard",
+  "description": "Explainable AI-powered early drug-abuse risk assessment and early warning platform. Research decision-support, not a medical diagnosis.",
+  "start_url": "/app",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0c10",
+  "theme_color": "#0b0c10",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

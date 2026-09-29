@@ -1,0 +1,26 @@
+======================================================================
+TARGET DEFINITION REPORT
+======================================================================
+
+TARGET COLUMN    : Drug_Abuse_Risk
+TARGET TYPE      : Operational research label (NOT clinically validated)
+CLASSES          : Low Risk | Moderate Risk | High Risk
+
+CLASS DISTRIBUTION:
+  Low Risk            : 2000 (40.0%)
+  High Risk           : 1500 (30.0%)
+  Moderate Risk       : 1500 (30.0%)
+
+LIKELY LABEL CONSTRUCTION VARIABLES (inferred from dataset):
+  - Type_of_Substance_Used
+  - Frequency_of_Use
+  - Duration_of_Use
+  - Craving_Level
+  - Withdrawal_Symptoms
+  - Previous_Rehabilitation_Counselling
+
+LIMITATIONS:
+  - Target is not clinically validated.
+  - The model cannot diagnose addiction.
+  - The model cannot guarantee future drug use.
+  - Associations are observational, not causal.

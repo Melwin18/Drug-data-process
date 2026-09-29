@@ -1,0 +1,175 @@
+/* Landing-specific layout. Tokens only — see base.css for the primitives. */
+
+/* ---------------------------------------------------------------------- hero */
+.hero { padding-block: clamp(40px, 7vw, 96px) clamp(52px, 9vw, 120px); }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  gap: clamp(26px, 4vw, 64px);
+  align-items: center;
+}
+
+.hero-copy { max-width: 620px; }
+
+.hero-visual .img-plate { aspect-ratio: 4 / 5; }
+
+/* ------------------------------------------------------------- assessment */
+.assessment-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+  gap: clamp(16px, 3vw, 28px);
+  align-items: start;
+}
+
+.assessment-form,
+.assessment-result {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: clamp(18px, 3vw, 28px);
+  border: var(--tp-bw) solid var(--tp-line);
+  border-radius: var(--tp-r);
+  background: var(--tp-surf-2);
+}
+
+.assessment-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+}
+
+.assessment-field { display: grid; gap: 6px; }
+.assessment-field input[type="range"] { width: 100%; accent-color: var(--tp-acc); }
+.assessment-field select { width: 100%; padding: 8px; background: var(--tp-canvas); border: var(--tp-bw) solid var(--tp-line); }
+.assessment-result { min-height: 180px; }
+
+@media (max-width: 760px) {
+  .assessment-layout,
+  .assessment-fields { grid-template-columns: 1fr; }
+}
+
+/* -------------------------------------------------------------- proof strip */
+.proof-strip {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 28px);
+  flex-wrap: wrap;
+  padding-block: 18px;
+  border-block: var(--tp-bw) solid var(--tp-line);
+}
+
+.proof-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 9px;
+  font-size: 13.5px;
+}
+
+.proof-item strong {
+  font-family: var(--tp-font-display);
+  font-weight: var(--tp-w-display);
+  letter-spacing: var(--tp-track-display);
+  font-size: 15px;
+}
+
+.proof-sep {
+  width: 4px;
+  aspect-ratio: 1;
+  border-radius: var(--tp-r-btn);
+  background: var(--tp-acc);
+  flex: none;
+}
+
+/* --------------------------------------------------------------------- bento */
+.bento-image .img-plate { aspect-ratio: 1 / 1; }
+
+/* -------------------------------------------------------- testimonial + CTA */
+.band { min-height: 380px; display: flex; align-items: center; }
+
+.band-tall { min-height: 420px; }
+
+.band-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--tp-bg) 4%, transparent 72%);
+}
+
+.band-quote {
+  font-family: var(--tp-font-display);
+  font-weight: var(--tp-w-display);
+  letter-spacing: var(--tp-track-display);
+  font-size: clamp(19px, 2.3vw, 28px);
+  line-height: 1.25;
+  max-width: 34ch;
+}
+
+/* ----------------------------------------------------------------------- faq */
+.faq-item { padding: 0; }
+
+.faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px clamp(18px, 2.2vw, 28px);
+  font-weight: 600;
+  font-size: 15.5px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-q::-webkit-details-marker { display: none; }
+
+.faq-item[open] .faq-q svg { transform: rotate(180deg); }
+
+.faq-q svg { transition: transform var(--tp-dur) var(--tp-ease); }
+
+.faq-a { padding: 0 clamp(18px, 2.2vw, 28px) 20px; }
+
+/* -------------------------------------------------------------------- footer */
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  min-height: 72px;
+}
+
+.footer-inner nav a { transition: color var(--tp-dur) linear; }
+
+.footer-inner nav a:hover { color: var(--tp-ink); }
+
+/* ----------------------------------------------------- mobile-stacked landing */
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+
+  .hero { padding-block: 26px 40px; }
+
+  /* Hero image caps at 190px, headline overlaps it by 34px. */
+  .hero-visual { order: -1; }
+
+  .hero-visual .img-plate { aspect-ratio: auto; height: 190px; }
+
+  .hero-copy { margin-top: -34px; position: relative; z-index: 1; }
+
+  .hero-h1 { font-size: clamp(32px, 10vw, 44px); }
+
+  .hero-actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+    padding: 16px 0 max(16px, env(safe-area-inset-bottom));
+    background: linear-gradient(0deg, var(--tp-bg) 60%, transparent);
+  }
+
+  .hero-actions .btn { flex: 1 1 auto; }
+
+  .band { min-height: 300px; }
+
+  .band-img::after { background: linear-gradient(0deg, var(--tp-bg) 6%, transparent 78%); }
+
+  .band-plate { margin: 16px; }
+}

@@ -1,0 +1,12 @@
+Feature,Meaning,Available_Before_Outcome,Direct_Leakage,Indirect_Leakage,Valid_Predictor,Decision,Reason
+Previous_Substance_Exposure,Binary flag: historical substance exposure (Yes/No),"YES - historical, pre-assessment",NO,LOW,YES,RETAIN,Historical exposure is a legitimate pre-assessment risk factor. Not a post-outcome variable.
+Substance_Use_Intention,Self-reported intention toward substance use (scale),YES - psychological state measurable before abuse,NO,MODERATE (strong predictor but pre-outcome),YES,RETAIN,Theory of Planned Behaviour predictor. Pre-outcome psychological measure.
+Substance_Exposure_Frequency,Frequency of substance exposure (Daily/Weekly/etc),UNCERTAIN - overlaps with Frequency_of_Use,HIGH,HIGH,NO,REMOVE,Semantically overlaps with Frequency_of_Use (confirmed post-outcome). Removed.
+Polysubstance_Exposure,Currently using multiple substances (Yes/No),NO - concurrent use implies active abuse,HIGH,HIGH,NO,REMOVE,Post-outcome marker: concurrent poly-substance use is a consequence of abuse.
+Age_First_Substance_Exposure,Age at first substance use,PARTIALLY - only non-null for substance users,"YES (63% missing, non-random)",YES,NO,REMOVE,63.1% missing. Missingness directly encodes non-user class. Including it reveals class through NA pattern.
+Type_of_Substance_Used,Which substance currently used,NO,YES,YES,NO,REMOVE,Post-outcome: describes active abuse behaviour.
+Frequency_of_Use,Current substance use frequency,NO,YES,YES,NO,REMOVE,Post-outcome: current use frequency.
+Duration_of_Use,Duration of ongoing substance use,NO,YES,YES,NO,REMOVE,Post-outcome: duration of abuse episode.
+Craving_Level,Self-reported craving intensity,NO,YES,YES,NO,REMOVE,Post-outcome: DSM-5 substance dependence criterion.
+Withdrawal_Symptoms,Withdrawal severity (Mild/Moderate/Severe/No Use),NO,YES,YES,NO,REMOVE,Post-outcome: primary diagnostic indicator of physical dependence.
+Previous_Rehabilitation_Counselling,Prior rehabilitation history (Yes/No),PARTIALLY - historical,MODERATE,HIGH,BORDERLINE,REMOVE,Implies a prior confirmed abuse episode. Creates reverse causation in early-warning context.

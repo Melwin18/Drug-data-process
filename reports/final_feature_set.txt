@@ -1,0 +1,87 @@
+========================================================================
+FINAL FEATURE SET - CORRECTED PIPELINE v2.0
+Project: AI-Based Early Drug Abuse Risk Assessment
+========================================================================
+
+1.  Original feature count   : 86 predictors + 1 target
+2.  Candidate pool           : 76 (after structural removals)
+3.  Final predictor count    : 35
+4.  Train set size           : 4000 rows
+5.  Test set size            : 1000 rows (UNTOUCHED)
+
+FINAL FEATURE LIST:
+   1. Financial_Stress                               [Demographic           ]  score=0.5533  effect=0.06554
+   2. Hopelessness_Level                             [Psychological         ]  score=0.9372  effect=0.15466
+   3. Previous_Substance_Exposure                    [Substance-Related     ]  score=1.0000  effect=0.29817
+   4. Social_Isolation                               [Social/Peer           ]  score=0.8552  effect=0.08424
+   5. Childhood_Adversity                            [Family                ]  score=0.7951  effect=0.07952
+   6. Sleep_Quality                                  [Lifestyle             ]  score=0.8197  effect=0.08587
+   7. Workload_Level                                 [Academic/Work         ]  score=0.6585  effect=0.06578
+   8. Behavioural_Problems                           [Behavioural           ]  score=0.6257  effect=0.06080
+   9. Night_Time_Device_Usage                        [Digital               ]  score=0.8142  effect=0.10840
+  10. Attitude_Toward_Substance_Use                  [Attitudinal           ]  score=0.6885  effect=0.16146
+  11. Depression_Score                               [Psychological         ]  score=0.8770  effect=0.15923
+  12. Stress_Level                                   [Psychological         ]  score=0.8743  effect=0.25330
+  13. Loneliness_Level                               [Psychological         ]  score=0.8689  effect=0.09663
+  14. Impulsivity                                    [Psychological         ]  score=0.8525  effect=0.07319
+  15. Psychological_Distress                         [Psychological         ]  score=0.8306  effect=0.28568
+  16. Self_Esteem                                    [Psychological         ]  score=0.8142  effect=0.13887
+  17. Screen_Time                                    [Lifestyle             ]  score=0.8115  effect=0.08868
+  18. Anxiety_Level                                  [Psychological         ]  score=0.8033  effect=0.23250
+  19. Peer_Substance_Exposure                        [Social/Peer           ]  score=0.7842  effect=0.06161
+  20. Sleep_Duration                                 [Lifestyle             ]  score=0.7568  effect=0.10487
+  21. Family_Conflict                                [Family                ]  score=0.7404  effect=0.08454
+  22. Social_Support                                 [Social/Peer           ]  score=0.7377  effect=0.06966
+  23. Academic_Work_Stress                           [Lifestyle             ]  score=0.6885  effect=0.07413
+  24. Social_Pressure                                [Social/Peer           ]  score=0.6858  effect=0.05160
+  25. Substance_Use_Intention                        [Substance-Related     ]  score=0.6585  effect=0.06405
+  26. Academic_Performance                           [Academic/Work         ]  score=0.6421  effect=0.07677
+  27. Family_Stability                               [Family                ]  score=0.6230  effect=0.05572
+  28. Emotional_Regulation                           [Psychological         ]  score=0.6230  effect=0.05912
+  29. Family_Support                                 [Family                ]  score=0.6038  effect=0.04342
+  30. Self_Control                                   [Behavioural           ]  score=0.6011  effect=0.06767
+  31. Job_Satisfaction                               [Academic/Work         ]  score=0.5956  effect=0.06709
+  32. Peer_Influence                                 [Social/Peer           ]  score=0.5874  effect=0.05510
+  33. Decision_Making_Control                        [Behavioural           ]  score=0.5765  effect=0.05984
+  34. Awareness_of_Drug_Related_Risks                [Attitudinal           ]  score=0.5710  effect=0.03668
+  35. School_Work_Absenteeism                        [Academic/Work         ]  score=0.5642  effect=0.07825
+
+DOMAIN DISTRIBUTION:
+  Academic/Work            : 4
+  Attitudinal              : 2
+  Behavioural              : 3
+  Demographic              : 1
+  Digital                  : 1
+  Family                   : 4
+  Lifestyle                : 4
+  Psychological            : 9
+  Social/Peer              : 5
+  Substance-Related        : 2
+
+STRUCTURAL REMOVALS (pre-split leakage):
+  - Record_ID: Identifier
+  - Type_of_Substance_Used: Post-outcome
+  - Frequency_of_Use: Post-outcome
+  - Duration_of_Use: Post-outcome
+  - Craving_Level: Post-outcome
+  - Withdrawal_Symptoms: Post-outcome
+  - Previous_Rehabilitation_Counselling: Post-outcome/reverse-causation
+  - Substance_Exposure_Frequency: Active-use proxy
+  - Polysubstance_Exposure: Post-outcome
+  - Age_First_Substance_Exposure: 63% missing, non-random
+
+PREPROCESSING:
+  Split FIRST -> Impute(train) -> Scale(train) -> Encode(train)
+  Numerical  : SimpleImputer(median) + StandardScaler
+  Categorical: SimpleImputer(most_frequent) + OneHotEncoder(drop=first)
+
+FEATURE SELECTION:
+  Kruskal-Wallis/Chi-Squared on training set only
+  Correlation on training set only
+  RF + XGB importance on 80% of training (internal split)
+  Permutation importance on 20% of training (internal split)
+  Rank-based combined score across 5 signals
+  Test set NEVER touched during selection.
+
+SUITABILITY: YES
+LEAKAGE STATUS: CLEAN

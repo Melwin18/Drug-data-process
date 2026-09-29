@@ -1,0 +1,7 @@
+Model,Best F1_Macro (CV),Best Params
+Logistic Regression,0.6592794328210014,"{'classifier__solver': 'lbfgs', 'classifier__class_weight': 'balanced', 'classifier__C': 10.0}"
+Decision Tree,0.5552551794962746,"{'classifier__min_samples_split': 5, 'classifier__min_samples_leaf': 1, 'classifier__max_depth': 10, 'classifier__criterion': 'gini', 'classifier__class_weight': 'balanced'}"
+Random Forest,0.6439342655047307,"{'classifier__n_estimators': 200, 'classifier__min_samples_split': 2, 'classifier__min_samples_leaf': 2, 'classifier__max_depth': 10, 'classifier__class_weight': 'balanced'}"
+SVM,0.6574409853897459,"{'classifier__kernel': 'linear', 'classifier__gamma': 'scale', 'classifier__class_weight': None, 'classifier__C': 1.0}"
+XGBoost,0.6452182343963508,"{'classifier__subsample': 0.8, 'classifier__n_estimators': 200, 'classifier__max_depth': 3, 'classifier__learning_rate': 0.1, 'classifier__colsample_bytree': 1.0}"
+LightGBM,0.6511916393881889,"{'classifier__subsample': 1.0, 'classifier__num_leaves': 31, 'classifier__n_estimators': 100, 'classifier__max_depth': 10, 'classifier__learning_rate': 0.1, 'classifier__colsample_bytree': 0.8}"

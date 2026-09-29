@@ -1,0 +1,46 @@
+--- Logistic Regression ---
+{
+  "classifier__solver": "lbfgs",
+  "classifier__class_weight": "balanced",
+  "classifier__C": 10.0
+}
+--- Decision Tree ---
+{
+  "classifier__min_samples_split": 5,
+  "classifier__min_samples_leaf": 1,
+  "classifier__max_depth": 10,
+  "classifier__criterion": "gini",
+  "classifier__class_weight": "balanced"
+}
+--- Random Forest ---
+{
+  "classifier__n_estimators": 200,
+  "classifier__min_samples_split": 2,
+  "classifier__min_samples_leaf": 2,
+  "classifier__max_depth": 10,
+  "classifier__class_weight": "balanced"
+}
+--- SVM ---
+{
+  "classifier__kernel": "linear",
+  "classifier__gamma": "scale",
+  "classifier__class_weight": null,
+  "classifier__C": 1.0
+}
+--- XGBoost ---
+{
+  "classifier__subsample": 0.8,
+  "classifier__n_estimators": 200,
+  "classifier__max_depth": 3,
+  "classifier__learning_rate": 0.1,
+  "classifier__colsample_bytree": 1.0
+}
+--- LightGBM ---
+{
+  "classifier__subsample": 1.0,
+  "classifier__num_leaves": 31,
+  "classifier__n_estimators": 100,
+  "classifier__max_depth": 10,
+  "classifier__learning_rate": 0.1,
+  "classifier__colsample_bytree": 0.8
+}

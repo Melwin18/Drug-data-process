@@ -1,0 +1,56 @@
+Cluster,Feature_A,Feature_B,Pearson_r,High_Redundancy
+Stress,Stress_Level,Psychological_Distress,0.5677,No
+Stress,Stress_Level,Academic_Work_Stress,0.4778,No
+Stress,Stress_Level,Workplace_Stress,0.5188,No
+Stress,Psychological_Distress,Academic_Work_Stress,0.25,No
+Stress,Psychological_Distress,Workplace_Stress,0.2798,No
+Stress,Academic_Work_Stress,Workplace_Stress,0.2655,No
+Social Isolation,Social_Isolation,Loneliness_Level,0.5681,No
+Social Isolation,Social_Isolation,Social_Integration,-0.4232,No
+Social Isolation,Social_Isolation,Social_Support,-0.3771,No
+Social Isolation,Social_Isolation,Friendship_Quality,-0.4308,No
+Social Isolation,Loneliness_Level,Social_Integration,-0.3665,No
+Social Isolation,Loneliness_Level,Social_Support,-0.5131,No
+Social Isolation,Loneliness_Level,Friendship_Quality,-0.3411,No
+Social Isolation,Social_Integration,Social_Support,0.5236,No
+Social Isolation,Social_Integration,Friendship_Quality,0.2879,No
+Social Isolation,Social_Support,Friendship_Quality,0.4119,No
+Family,Family_Conflict,Family_Stability,-0.6091,No
+Family,Family_Conflict,Family_Support,-0.4587,No
+Family,Family_Conflict,Family_Communication_Quality,-0.4913,No
+Family,Family_Conflict,Parental_Monitoring,-0.2546,No
+Family,Family_Stability,Family_Support,0.4513,No
+Family,Family_Stability,Family_Communication_Quality,0.4291,No
+Family,Family_Stability,Parental_Monitoring,0.1689,No
+Family,Family_Support,Family_Communication_Quality,0.458,No
+Family,Family_Support,Parental_Monitoring,0.1244,No
+Family,Family_Communication_Quality,Parental_Monitoring,0.1253,No
+Behavioural,Impulsivity,Risk_Taking_Tendency,0.4295,No
+Behavioural,Impulsivity,Rule_Breaking_Behaviour,0.4881,No
+Behavioural,Impulsivity,Self_Control,-0.3627,No
+Behavioural,Impulsivity,Decision_Making_Control,-0.3476,No
+Behavioural,Impulsivity,Behavioural_Problems,0.4908,No
+Behavioural,Risk_Taking_Tendency,Rule_Breaking_Behaviour,0.402,No
+Behavioural,Risk_Taking_Tendency,Self_Control,-0.1358,No
+Behavioural,Risk_Taking_Tendency,Decision_Making_Control,-0.1369,No
+Behavioural,Risk_Taking_Tendency,Behavioural_Problems,0.2852,No
+Behavioural,Rule_Breaking_Behaviour,Self_Control,-0.1516,No
+Behavioural,Rule_Breaking_Behaviour,Decision_Making_Control,-0.1762,No
+Behavioural,Rule_Breaking_Behaviour,Behavioural_Problems,0.3894,No
+Behavioural,Self_Control,Decision_Making_Control,0.2418,No
+Behavioural,Self_Control,Behavioural_Problems,-0.215,No
+Behavioural,Decision_Making_Control,Behavioural_Problems,-0.2204,No
+Mood,Depression_Score,Hopelessness_Level,0.6742,No
+Mood,Depression_Score,Anger_Level,0.1573,No
+Mood,Depression_Score,Anxiety_Level,0.6752,No
+Mood,Depression_Score,Loneliness_Level,0.1322,No
+Mood,Hopelessness_Level,Anger_Level,0.2447,No
+Mood,Hopelessness_Level,Anxiety_Level,0.5392,No
+Mood,Hopelessness_Level,Loneliness_Level,0.2378,No
+Mood,Anger_Level,Anxiety_Level,0.2209,No
+Mood,Anger_Level,Loneliness_Level,0.1984,No
+Mood,Anxiety_Level,Loneliness_Level,0.1938,No
+Sleep,Sleep_Duration,Sleep_Quality,0.2338,No
+Substance,Substance_Use_Curiosity,Substance_Use_Intention,0.4349,No
+Substance,Substance_Use_Curiosity,Substance_Availability_Exposure,0.2804,No
+Substance,Substance_Use_Intention,Substance_Availability_Exposure,0.4461,No
